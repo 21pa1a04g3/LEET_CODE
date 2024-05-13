@@ -1,0 +1,33 @@
+//1.String-2 > double_char
+def double_char(str):
+  sum = ""
+  for i in range(len(str)):
+    sum += (str[i])*2
+  return sum
+
+//2.String-2 > count_hi
+def count_hi(str):
+  return str.count("hi")
+
+//3.String-2 > cat_dog
+def cat_dog(str):
+  if(str.count("cat")==str.count("dog")):
+    return True
+  else:
+    return False
+
+//4.String-2 > count_code
+def count_code(str):
+  count = 0
+  for i in range(len(str)-3):
+    if(str[i] == 'c' and str[i + 1] == 'o' and str[i + 3] == 'e'):
+      count+=1
+  return count
+
+//5.String-2 > end_other
+def end_other(a, b):
+  return a.lower().endswith(b.lower()) or b.lower().endswith(a.lower())
+
+//6.String-2 > xyz_there
+def xyz_there(str):
+  return str.count(".xyz") != str.count("xyz")
